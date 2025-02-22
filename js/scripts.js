@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const peliculas = [
         { titulo: "Xtremo", genero: "accion", trailer: "https://www.youtube.com/watch?v=KadFgRuUn74", imagen: "img/pelicula1.jpg" },
-        { titulo: "Culpa Tuya", genero: "drama", trailer: "https://www.youtube.com/watch?v=f97f1jEqdgE", imagen: "../img/pelicula2.jpg" },
-        { titulo: "El Mejor venaro de mi vida", genero: "comedia", trailer: "https://www.youtube.com/watch?v=IZn--VYwhR0", imagen: "../img/pelicula3.jpg" },
-        { titulo: "Lo dejo cuando quiera", genero: "comedia", trailer: "https://www.youtube.com/watch?v=Py3JDqMl-84", imagen: "../img/pelicula4.jpg" },
-        { titulo: "Salve Maria", genero: "drama", trailer: "https://www.youtube.com/watch?v=6Fu-aAfZvwE", imagen: "../img/pelicula5.jpg" },
-        { titulo: "Dos tontos muy tontos", genero: "comedia", trailer: "https://www.youtube.com/watch?v=l13yPhimE3o", imagen: "../img/pelicula6.jpg" }
+        { titulo: "Culpa Tuya", genero: "drama", trailer: "https://www.youtube.com/watch?v=f97f1jEqdgE", imagen: "img/pelicula2.jpg" },
+        { titulo: "El Mejor venaro de mi vida", genero: "comedia", trailer: "https://www.youtube.com/watch?v=IZn--VYwhR0", imagen: "img/pelicula3.jpg" },
+        { titulo: "Lo dejo cuando quiera", genero: "comedia", trailer: "https://www.youtube.com/watch?v=Py3JDqMl-84", imagen: "img/pelicula4.jpg" },
+        { titulo: "Salve Maria", genero: "drama", trailer: "https://www.youtube.com/watch?v=6Fu-aAfZvwE", imagen: "img/pelicula5.jpg" },
+        { titulo: "Dos tontos muy tontos", genero: "comedia", trailer: "https://www.youtube.com/watch?v=l13yPhimE3o", imagen: "img/pelicula6.jpg" }
     ];
 
     const series = [
