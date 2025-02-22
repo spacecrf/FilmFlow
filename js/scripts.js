@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputBusqueda = document.getElementById("busqueda");
 
     const peliculas = [
-        { titulo: "Xtremo", genero: "accion", trailer: "https://www.youtube.com/watch?v=KadFgRuUn74", imagen: "/img/pelicula1.jpg" },
+        { titulo: "Xtremo", genero: "accion", trailer: "https://www.youtube.com/watch?v=KadFgRuUn74", imagen: "img/pelicula1.jpg" },
         { titulo: "Culpa Tuya", genero: "drama", trailer: "https://www.youtube.com/watch?v=f97f1jEqdgE", imagen: "img/pelicula2.jpg" },
         { titulo: "El Mejor venaro de mi vida", genero: "comedia", trailer: "https://www.youtube.com/watch?v=IZn--VYwhR0", imagen: "img/pelicula3.jpg" },
         { titulo: "Lo dejo cuando quiera", genero: "comedia", trailer: "https://www.youtube.com/watch?v=Py3JDqMl-84", imagen: "img/pelicula4.jpg" },
@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     const series = [
-        { titulo: "La casa de Papel", genero: "accion", trailer: "https://www.youtube.com/watch?v=3y-6iaveY6c", imagen: "../img/serie1.jpg" },
-        { titulo: "Machos Alfa", genero: "drama", trailer: "https://www.youtube.com/watch?v=seSA6OzeNpA", imagen: "../img/serie2.jpg" },
-        { titulo: "La que se avecina", genero: "comedia", trailer: "https://www.youtube.com/watch?v=_RoauX_3_is&t=1s", imagen: "../img/serie3.jpg" }, 
-        { titulo: "Lupin", genero: "accion", trailer: "https://www.youtube.com/watch?v=yX5Py7lL5dw", imagen: "../img/serie4.jpg"},
-        { titulo: "1992", genero: "drama", trailer: "https://www.youtube.com/watch?v=CyrVTcTi7aE", imagen: "../img/serie5.jpg"},
-        { titulo: "Yo nunca", genero: "comedia", trailer: "https://www.youtube.com/watch?v=Z4d0DxHmn8E", imagen: "../img/serie6.jpg" }
+        { titulo: "La casa de Papel", genero: "accion", trailer: "https://www.youtube.com/watch?v=3y-6iaveY6c", imagen: "img/serie1.jpg" },
+        { titulo: "Machos Alfa", genero: "drama", trailer: "https://www.youtube.com/watch?v=seSA6OzeNpA", imagen: "img/serie2.jpg" },
+        { titulo: "La que se avecina", genero: "comedia", trailer: "https://www.youtube.com/watch?v=_RoauX_3_is&t=1s", imagen: "img/serie3.jpg" }, 
+        { titulo: "Lupin", genero: "accion", trailer: "https://www.youtube.com/watch?v=yX5Py7lL5dw", imagen: "img/serie4.jpg"},
+        { titulo: "1992", genero: "drama", trailer: "https://www.youtube.com/watch?v=CyrVTcTi7aE", imagen: "img/serie5.jpg"},
+        { titulo: "Yo nunca", genero: "comedia", trailer: "https://www.youtube.com/watch?v=Z4d0DxHmn8E", imagen: "img/serie6.jpg" }
     ];
     
 
