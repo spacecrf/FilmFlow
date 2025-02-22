@@ -1,0 +1,233 @@
+/* 🎨 ESTILO GENERAL */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* 🔝 BARRA DE NAVEGACIÓN */
+.navbar {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🏆 SECCIÓN DE TÍTULO */
+.seccion-titulo {
+    background: linear-gradient(to right, #000000, #3a3a3a);
+    color: white;
+    padding: 50px 0;
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* 🏞️ Carrusel con efecto de difuminado y mejor integración */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-img {
+    object-fit: cover;
+    height: 75vh;
+    width: 100%;
+    filter: brightness(85%);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 🌟 Nueva transición más limpia entre carrusel y hero */
+.gradient-overlay {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, #000000 95%);
+    pointer-events: none;
+}
+
+/* 🎬 Hero con transición mejorada */
+.hero {
+    background-color: #000;
+    padding: 80px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: background 0.5s ease-in-out;
+}
+
+/* 🌟 Ajuste de imágenes global */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 📏 Ajuste de proporciones en tarjetas y carrusel */
+.pelicula-card img, 
+.serie-card img, 
+.carousel-img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* 🌟 ANIMACIÓN DE APARICIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Evita que las películas y series se oculten por error */
+
+.pelicula, .serie {
+    display: block !important;
+    opacity: 1;
+}
+
+.pelicula-card, .serie-card {
+    transition: transform 0.5s ease-in-out;
+}
+
+.pelicula-card:hover, .serie-card:hover {
+    transform: scale(1.05);
+}
+
+/* 🎥 TARJETAS DE PELÍCULAS Y SERIES */
+.pelicula-card, 
+.serie-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.pelicula-card.visible, 
+.serie-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pelicula-card:hover, 
+.serie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 🎭 ETIQUETAS DE GÉNERO */
+.badge.genero {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 🎭 COLORES PARA CADA GÉNERO */
+.badge.bg-danger { background-color: #dc3545 !important; } /* Acción */
+.badge.bg-primary { background-color: #007bff !important; } /* Drama */
+.badge.bg-success { background-color: #28a745 !important; } /* Comedia */
+.badge.bg-warning { background-color: #ffc107 !important; } /* Terror */
+.badge.bg-info { background-color: #17a2b8 !important; } /* Ciencia Ficción */
+
+/* 🎟️ BOTONES */
+.btn {
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-danger {
+    background-color: #ff5733;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c70039;
+}
+
+.btn-primary {
+    background-color: #ff5733;
+    border-color: #ff5733;
+}
+
+.btn-primary:hover {
+    background-color: #c70039;
+    border-color: #c70039;
+}
+
+.btn-outline-light {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* 🏆 TABLA DE CLASIFICACIÓN */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 🎯 FILTROS Y BÚSQUEDA */
+#filtro-tipo, 
+#busqueda-top, 
+#filtro-genero, 
+#busqueda {
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 📩 FORMULARIO DE CONTACTO */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+/* 🎯 CAMPOS DEL FORMULARIO */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #ff5733;
+    box-shadow: 0px 0px 8px rgba(255, 87, 51, 0.5);
+}
+
+/* ✨ SPINNER DE CARGA */
+.spinner-border {
+    margin-left: 8px;
+}
+
+/* 💻 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 50vh;
+    }
+
+    .gradient-overlay {
+        height: 80px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .pelicula-card:hover, 
+    .serie-card:hover {
+        transform: none;
+    }
+}
