@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputBusqueda = document.getElementById("busqueda");
 
     const peliculas = [
-        { titulo: "Xtremo", genero: "accion", trailer: "https://www.youtube.com/watch?v=KadFgRuUn74", imagen: "../img/pelicula1.jpg" },
+        { titulo: "Xtremo", genero: "accion", trailer: "https://www.youtube.com/watch?v=KadFgRuUn74", imagen: "img/pelicula1.jpg" },
         { titulo: "Culpa Tuya", genero: "drama", trailer: "https://www.youtube.com/watch?v=f97f1jEqdgE", imagen: "../img/pelicula2.jpg" },
         { titulo: "El Mejor venaro de mi vida", genero: "comedia", trailer: "https://www.youtube.com/watch?v=IZn--VYwhR0", imagen: "../img/pelicula3.jpg" },
         { titulo: "Lo dejo cuando quiera", genero: "comedia", trailer: "https://www.youtube.com/watch?v=Py3JDqMl-84", imagen: "../img/pelicula4.jpg" },
